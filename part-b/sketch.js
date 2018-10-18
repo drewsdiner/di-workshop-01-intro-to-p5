@@ -1,9 +1,10 @@
 function setup() {
-  createCanvas(400, 400)
-  background(0, 0, 0)
+  createCanvas(1420, 700)
+  background(255, 192, 203)
 }
 
 function draw() {
-  fill(255, 0, 0)
-  ellipse(mouseX, mouseY, 30, 30)
+  fill(200, 200, 0)
+  triangle(mouseX, mouseY, 13, 75, 28, 20, 26, 75);
+  
 }

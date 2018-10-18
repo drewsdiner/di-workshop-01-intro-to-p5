@@ -126,9 +126,9 @@ var b = 0
 **What might these lines do?**
 
 **What happens if you change the numbers?**
-
+Changing the variable numbers changes the colours
 **What numbers are allowed / What numbers have an effect?**
-
+You can enter up to 225 max, over 225 wont work
 Look at this line:
 
 ```js
@@ -136,15 +136,15 @@ createCanvas(400, 400)
 ```
 
 **What does createCanvas do?**
-
+It created a shape
 **What happens if you change the numbers?**
-
+Changing numbers increase, decrease the scale of height and width 
 **What numbers are allowed/what numbers have an effect?**
-
+When I type in a large number it appears the canvas stretches beyond the screen capacity. 
 **What happens if you add/remove a number?**
-
+Remove one number set it breaks the canvas 
 **Can you guess what the `function setup() {` part does? What happens if you
-change the name of setup?**
+change the name of setup?** NEED TO LOOK THIS UP
 
 Look at this line:
 
@@ -157,9 +157,13 @@ background(r, g, b)
 **What happens if you change the order of the letters in background? What does
 this tell you about how the computer uses them?**
 
-**What happens if you change the number of letters?**
+Swapping around the order of R G B changes the colour codes from its original set up
 
+**What happens if you change the number of letters?**
+Taking away one letter breaks it. 
 **What happens if you change the letters for different ones?**
+Changing letters to different ones does not produce any colours
+
 
 # Sketch B
 
@@ -207,8 +211,9 @@ fill(255, 0, 0)
 ```
 
 **What do these numbers do? What happens when you change them?**
-
+Changing the fill numbers changes the colours
 **What does fill mean? What happens if you change it to stroke?**
+When I changed to stroke the colour of my circumference just changed to white..
 
 **What happens if you remove (or comment out) this line? What about if you
 include both fill and stroke on seperate lines?**
@@ -220,16 +225,19 @@ ellipse(mouseX, mouseY, 30, 30)
 ```
 
 **What does `ellipse` do?**
+Ellipse is the circular "paint brush"
 
 **What happens if you change the numbers?**
-
+Changing the number increase decrease the sizes
 **What do `mouseX` and `mouseY` mean?**
 
 **What happens if you change the order of the items between the `(` `)`?**
+Changing order from X and Y to Y and X makes the mouse cursor behave irradically the other way. Having it X and Y order behaves and feels accurate
 
 ---
 
 **What happens if you add `background(0)` after `draw() {`? Why?**
+Ended up with a black background and no paint brush cursor..
 
 Replace the ellipse with a triangle. Use https://p5js.org/reference/ (the 2D
 primitives section) to help.
@@ -255,16 +263,20 @@ if (mouseIsPressed) {
 ```
 
 **What does `mouseIsPressed` mean?**
+When you pressed the mouse button it is responding to a colour change from scrolling in one colour then pressing changed to another colour
 
 **What happens if you change `mouseIsPressed` to `keyIsPressed`?** You’ll need
 to click on the sketch so it registers keyboard events – use the ctrl key if you
 have issues with the keyboard.
+
+Scrolling around in one colour then pressing spacebar whilst scrolling changed to another colour
 
 **What does if / else do?**
 
 **What happens if you remove the { } or ( )? Why?**
 
 **What happens if you change 255 to mouseX ? Why?**
+The left screen when scrolled paints back then to the right the colours appears. Could be to do with Zero fills number which is black then.. 
 
 **Remove the outline of the circle. Use Google and the P5.js reference to help
 you.**
